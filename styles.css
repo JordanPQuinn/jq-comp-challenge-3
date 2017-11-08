@@ -1,11 +1,11 @@
 html, 
 body {
-  margin: 0;
   box-sizing: border-box;
-  width: 100%;
-  min-height: 100%;
-  font-family: 'Open-Sans', sans-serif;
   color: grey;
+  font-family: 'Open-Sans', sans-serif;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
 }
 
 input:focus,
@@ -16,49 +16,49 @@ button:focus {
 }
 
 .wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 175px;
+  grid-template-rows: repeat(12, 125px);
   min-height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: 175px;
-  grid-gap: 0px;
-  grid-template-rows: repeat(12, 125px);
 }
 
 #side-nav {
   background-color: #354150;
-  width: 175px;
-  grid-row-start: 1;
   grid-row-end: all;
+  grid-row-start: 1;
+  width: 175px;
 }
 
 #user-container, 
 #main, 
 #admin {
-  padding-bottom: 10px;
   border-bottom: 2px solid rgba(35, 42, 51, .5);
   box-shadow: 0 2px 2px -2px rgba(35, 42, 51, .5); 
+  padding-bottom: 10px;
 }
 
 .profile {
+  border-radius: 50%;
   display: block;
   margin: 15px auto;
   width: 100px;
-  border-radius: 50%;
 }
 
 #profile-text {
   color: #a3a3a3;
-  font-weight: 600;
   font-size: 12px;
-  margin-top: 15px;
+  font-weight: 600;
   height: 20px;
+  margin-top: 15px;
 }
 
 .widget-header,
 .widget-text {
-  margin-top: 25px;
   font-size: 12px;
   margin-left: 20px;
+  margin-top: 25px;
 }
 
 .widget-text {
@@ -71,71 +71,71 @@ button:focus {
 
 #hover-widget:hover {
   background-color: #28303a;
+  border-left: 3px solid #1CA4E9;
   color: #FFFFFF;
   cursor: pointer;
   padding-left: 15px;
-  border-left: 3px solid #1CA4E9;
 }
 
 .status-container {
-  position: relative;
-  width: 250px;
-  height: 50px;
-  top: -40px;
-  left: 40%;
   display: inline-flex;
+  height: 50px;
+  left: 40%;
+  position: relative;
+  top: -40px;
+  width: 250px;
 }
 
 .status-text {
+  color: grey;
   font-size: 16px;
   font-weight: 800;
-  color: grey;
   margin: 7px 7px;
   margin-left: 5px;
 }
 
 .listing-status{
+  border-radius: 50px;
+  border: 2px solid lightgrey;
   display: inline-block;
   height: 30px;
   width: 100px;
-  border: 2px solid lightgrey;
-  border-radius: 50px;
 }
 
 .listing-icon-container {
-  margin-left: 10px;
+  border-radius: 20px;
   border: 2px solid lightgrey;
   display: inline-block;
-  width: 30px;
-  border-radius: 20px;
   height: 30px;
+  margin-left: 10px;
+  width: 30px;
 }
 
 .listing-icon {
   display: block;
-  width: 20px;
   height: 20px;
   margin: 5px auto;
+  width: 20px;
 }
 
 .listing-icon-container:hover,
 .listing-status:hover {
-  cursor: pointer;
   background: lightgrey;
   border: 2px solid lightgrey;
+  cursor: pointer;
 }
 
 .login-circle {
-  margin-bottom: 5px;
-  vertical-align: middle;
   height: 15px;
+  margin-bottom: 5px;
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 .location-subhead {
+  display: inline-block;
   position: relative;
   top: -15px;
-  display: inline-block;
 }
 
 .status-text {
@@ -143,23 +143,23 @@ button:focus {
 }
 
 .side-icon {
-  margin-right: 5px;
   height: 12px;
+  margin-right: 5px;
   vertical-align: text-top;
 }
 
 #search-header {
   background-color: #FFFFFF;
   display: inline-flex;
-  grid-column-start: 2;
   grid-column-end: all;
+  grid-column-start: 2;
 }
 
 #search-input {
-  width: 100%;
   border: 1px solid lightgrey;
-  min-width: 500px;
   height: 71px;
+  min-width: 500px;
+  width: 100%;
 }
 
 .header-icon {
@@ -169,29 +169,29 @@ button:focus {
 
 #collapse-arrow {
   height: 15px;
-  transform: rotate(180deg);
   margin-right: -7px;
+  transform: rotate(180deg);
 }
 
 .preview, 
 .preview:visited, 
 .preview:hover {
-  text-decoration: none;
   color: #1CA4E9;
+  text-decoration: none;
 }
 
 .nav-button {
-  border: 1px solid lightgrey;
   background: white;
-  padding: 0;
-  min-width: 75px;
+  border: 1px solid lightgrey;
   height: 75px;
+  min-width: 75px;
+  padding: 0;
 }
 
 #menu {
   background-image: url("images/grid.svg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #menu:hover {
@@ -202,8 +202,8 @@ button:focus {
 
 #calendar {
   background-image: url("images/calendar.svg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #calendar:hover {
@@ -214,8 +214,8 @@ button:focus {
 
 #user{
   background-image: url("images/user.svg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #user:hover {
@@ -227,15 +227,15 @@ button:focus {
 .title, 
 .location {
   margin-bottom: 5px;
-  margin-top: 0;
   margin-left: 45px;
+  margin-top: 0;
 }
 
 .location-icon {
-  vertical-align: middle;
+  height: 12px;
   margin-bottom: 2.5px;
   margin-right: 0;
-  height: 12px;
+  vertical-align: middle;
 }
 
 .space {
@@ -245,34 +245,34 @@ button:focus {
 
 .location, 
 .preview  {
+  display: inline-block;
   font-size: 15px;
   margin-bottom: 0;
-  display: inline-block;
 }
 
 .state-nav {
-  z-index: 10;
-  margin-left: 45px;
-  list-style: none;
   display: flex;
   flex-direction: row;
+  list-style: none;
+  margin-left: 45px;
+  z-index: 10;
 }
 
 .state-select {
   font-size: 14px;
-  text-align: center;
   font-weight: 800;
-  width: 100px;
   margin-left: 20px;
   padding-bottom: 17px;
+  text-align: center;
+  width: 100px;
 }
 
 .active,
 .state-select:hover {
-  z-index: 15;
-  cursor: pointer;
-  color: black;
   border-bottom: 3px solid #1CA4E9;
+  color: black;
+  cursor: pointer;
+  z-index: 15;
 }
 
 #align {
@@ -281,52 +281,52 @@ button:focus {
 }
 
 .graph-container {
-  width: 100%;
-  grid-column-start: 2;
-  grid-column-end: all;
-  grid-row-start: 3;
-  grid-row-end: 6;
   background-color: #EDF2F6;
+  grid-column-end: all;
+  grid-column-start: 2;
+  grid-row-end: 6;
+  grid-row-start: 3;
+  width: 100%;
 }
 
 .main-container {
-  grid-column-start: 2;
-  grid-column-end: all;
-  grid-row-start: 6;
-  grid-row-end: all;
   background-color: #EDF2F6;
+  grid-column-end: all;
+  grid-column-start: 2;
+  grid-row-end: all;
+  grid-row-start: 6;
 }
 
 .circle-container {
-  width: 55%;
-  min-width: 580px;
   display: inline-block;
-  margin: 75px 0 0 45px
+  margin: 75px 0 0 45px;
+  min-width: 580px;
+  width: 55%;
 }
 
 .circle-base {
-  height: 150px;
-  width: 150px;
-  margin-right: 20px;
   border-radius: 50%;
   border: 9px solid lightgrey;
   display: inline-block;
+  height: 150px;
+  margin-right: 20px;
+  width: 150px;
 }
 
 
 .circle-outline {
-  position: relative;
-  right: 9px;
+  border-radius: 50%;
+  border: solid 9px #53BEBE;
+  border-color: #53BEBE transparent #53BEBE #53BEBE;
   bottom: 9px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  z-index: 5;
   height: 150px;
+  position: relative;
+  right: 9px;
   width: 150px;
-  border: solid 9px #53BEBE;
-  border-radius: 50%;
-  border-color: #53BEBE transparent #53BEBE #53BEBE;
+  z-index: 5;
 }
 
 .two {
@@ -339,11 +339,11 @@ button:focus {
 
 .circle-header, 
 .circle-subhead{
-  text-align: center;
-  width: 68%;
+  height: 30px;
   margin: auto;
   margin-top: 45px;
-  height: 30px;
+  text-align: center;
+  width: 68%;
 }
 
 .circle-subhead {
@@ -362,19 +362,19 @@ button:focus {
 
 .graph-caption,
 .graph-caption-two {
-  display: inline-block;
-  text-align: center;
-  margin: 40px 0 0 150px;
   background-color: white;
-  border: 2px solid lightgrey;
   border-radius: 50px;
-  width: 250px;
+  border: 2px solid lightgrey;
+  display: inline-block;
   height: 50px;
+  margin: 40px 0 0 150px;
+  text-align: center;
+  width: 250px;
 }
 
 .graph-caption-two {
-  width: 175px;
   margin-left: 115px;
+  width: 175px;
 }
 
 .break-container {
@@ -382,11 +382,11 @@ button:focus {
 }
 
 .break {
-  position: absolute;
-  margin-top: 53px;
-  margin-right: 50px;
-  width: 40%;
   border-bottom: 2px solid lightgrey;
+  margin-right: 50px;
+  margin-top: 53px;
+  position: absolute;
+  width: 40%;
 }
 
 .right {
@@ -395,10 +395,10 @@ button:focus {
 }
 
 .drawer-arrow {
-  top: 43px;
   left: 49%;
-  transform: rotate(270deg);
   position: relative;
+  top: 43px;
+  transform: rotate(270deg);
   z-index: 10;
 }
 
@@ -411,16 +411,16 @@ button:focus {
 .main-content {
   background-color: #FFFFFF;
   display: inline-block;
-  position: absolute;
+  height: 725px;
   margin: 60px 0 0 45px;
   min-width: 475px;
+  position: absolute;
   width: 45%;
-  height: 725px;
 }
 
 .dark-background {
-  border-bottom: none;
   background-color: #7B8AA2;
+  border-bottom: none;
 }
 
 #content-head {
@@ -441,14 +441,14 @@ button:focus {
 }
 
 .content-text {
-  line-height: 125%;
-  width: 325px;
+  color: #a3a3a3;
   display: inline-block;
   font-size: 12px;
-  color: #a3a3a3;
+  left: 15px;
+  line-height: 125%;
   position: relative;
   top: 3px;
-  left: 15px;
+  width: 325px;
 }
 
 .big {
@@ -456,9 +456,9 @@ button:focus {
 }
 
 .social-article {
-  padding-bottom: 29.5px;
   border-bottom: 2px solid rgba(211, 211, 211, .5);
   box-shadow: 0 2px 2px -2px rgba(211, 211, 211, .5);
+  padding-bottom: 29.5px;
 }
 
 .description-text {
@@ -466,22 +466,22 @@ button:focus {
 }
 
 .social-aside {
-  position: relative;
+  display: inline-block;
   left: 62.5%;
+  position: relative;
   top: 60px;
   width: 32.5%;
-  display: inline-block;
 }
 
 .social-button {
-  color: white;
-  margin-bottom: 20px;
+  border-radius: 3px;
   border: none;
+  color: white;
+  display: block;
   height: 60px;
+  margin-bottom: 20px;
   min-width: 330px;
   width: 100%;
-  display: block;
-  border-radius: 3px;
 }
 
 .social-button:hover {
@@ -496,13 +496,13 @@ button:focus {
 }
 
 .social-text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px auto;
   position: relative;
   right: 10px;
-  margin: 20px auto;
   width: 125px;
-  font-weight: 500;
-  font-size: 16px;
-  display: inline-block;
 }
 
 #facebook {
@@ -518,40 +518,40 @@ button:focus {
 }
 
 .social-article-head {
-  margin-top: 29.5px;
   font-size: 16px;
+  margin-top: 29.5px;
 }
 
 .social-article-body {
   font-size: 12px;
   line-height: 135%;
-  width: 100%;
   min-width: 337px;
+  width: 100%;
 }
 
 .social-article-input {
   border: none;
   display: inline-block;
-  width: 80%;
   height: 40px;
   text-indent: 10px;
+  width: 80%;
 }
 
 .copy {
-  color: white;
   background: #53BEBE;
-  display: inline-block;
-  width: 19%;
-  margin-left: -4px;
-  height: 42px;
   border: none;
+  color: white;
+  display: inline-block;
+  height: 42px;
+  margin-left: -4px;
   padding: 0;
+  width: 19%;
 }
 
 .no-border {
-  padding-bottom: 25px;
   border: none;
   box-shadow: none;
+  padding-bottom: 25px;
 }
 
 .wide {
@@ -568,26 +568,26 @@ button:focus {
   }
 
   #side-nav {
-    width: 100%;
     min-width: 175px;
+    width: 100%;
   }
 
   .graph-container {
+    grid-row-end: 7;
     min-width: 100%;
     z-index: 10;
-    grid-row-end: 7;
   }
 
   .main-container {
-    width: 100%;
     grid-row-start: 7;
+    width: 100%;
   }
 
   .circle-container,
   .graph-wrapper {
-    width: 580px;
     display: block;
     margin: 20px auto;
+    width: 580px;
   }
 
   .graph-caption, 
@@ -618,23 +618,23 @@ button:focus {
   }
 
   .state-select {
+    font-size: 12px;
     position: relative;
     top: 0;
-    font-size: 12px;
     width: 80px;
   }
   
   .social-aside {
-    width: 475px;
-    position: static;
-    margin: auto;
     display: block;
+    margin: auto;
+    position: static;
+    width: 475px;
   }
 
   .main-content {
     display: block;
-    position: static;
     margin: 30px auto;
+    position: static;
   }
 }
 
@@ -648,9 +648,9 @@ button:focus {
   }
 
   #align {
+    display: block;
     font-size: 14px;
     margin: auto;
-    display: block;
   }
 
   .page-header {
@@ -659,15 +659,15 @@ button:focus {
 
   .title,
   .location-subhead {
-    text-align: center;
     display: block;
     margin: 15px auto;
+    text-align: center;
     width: 320px;
   }
 
   .status-container {
-    left: 29%;
     justify-content: center;
+    left: 29%;
     margin-top: 15px;
 
   }
@@ -700,9 +700,9 @@ button:focus {
 
    .title,
   .location-subhead {
-    width: 320px;
-    text-align: center;
     display: block;
+    text-align: center;
+    width: 320px;
   }
 }
 
