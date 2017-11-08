@@ -372,6 +372,11 @@ button:focus {
   width: 250px;
 }
 
+.graph-caption:hover,
+.graph-caption:hover {
+  cursor: pointer;
+}
+
 .graph-caption-two {
   margin-left: 115px;
   width: 175px;
@@ -546,6 +551,13 @@ button:focus {
   margin-left: -4px;
   padding: 0;
   width: 19%;
+}
+
+.copy:hover {
+  cursor: pointer;
+  color: #53BEBE;
+  background: #FFFFFF;
+  border: 1px solid #53BEBE;
 }
 
 .no-border {
