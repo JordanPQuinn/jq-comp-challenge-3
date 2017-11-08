@@ -705,3 +705,10 @@ button:focus {
     display: block;
   }
 }
+
+@media screen and (min-width: 1500px) {
+
+  .graph-caption,
+  .graph-caption-two {
+    display: block;
+  }
