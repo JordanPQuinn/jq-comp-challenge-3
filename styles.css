@@ -710,6 +710,11 @@ button:focus {
     width: 100%;
   }
 
+  .break,
+  .drawer-arrow {
+    display: none;
+  }
+
    .title,
   .location-subhead {
     display: block;
