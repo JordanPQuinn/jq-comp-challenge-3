@@ -58,6 +58,10 @@ body {
   color: #a3a3a3;
 }
 
+#rotate {
+  transform: rotate(90deg)
+}
+
 #hover-widget:hover {
   background-color: #28303a;
   color: #FFFFFF;
